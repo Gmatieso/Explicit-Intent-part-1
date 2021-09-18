@@ -14,6 +14,7 @@ class ActivityB : AppCompatActivity() {
 
         val  extras = intent.extras ?:return
         val qString = extras.getString("qString")
+        textView2 = findViewById<TextView>(R.id.textView2)
         textView2.text = qString
     }
 }
