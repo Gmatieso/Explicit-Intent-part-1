@@ -8,7 +8,7 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var editText1: TextView  // initializing the myString variable
+    lateinit var editText1: TextView  // initializing  myString variable
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -17,5 +17,7 @@ class MainActivity : AppCompatActivity() {
     fun askQuestion(view: View) {
         val i = Intent(this,ActivityB::class.java)
        val  myString  = editText1.text.toString()
+        i.putExtra("qString",myString)
     }
+
 }
