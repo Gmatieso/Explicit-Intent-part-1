@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -26,5 +27,15 @@
         android:text="Ask Question"
         tools:layout_editor_absoluteX="133dp"
         tools:layout_editor_absoluteY="410dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="181dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
