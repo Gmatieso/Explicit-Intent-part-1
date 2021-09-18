@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val i = Intent(this,ActivityB::class.java)
        val  myString  = editText1.text.toString()
         i.putExtra("qString",myString)
+        startActivity(i)
     }
 
 }
